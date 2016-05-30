@@ -1,10 +1,10 @@
-package com.bgrulers.model;
+package com.bgrulers.entity;
 
 /**
  * Created by sslavkov on 5/30/2016.
  */
 
-public class Ruler {
+public class Ruler extends JpaEntity {
 
     public String getName() {
         return name;

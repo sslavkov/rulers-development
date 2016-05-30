@@ -1,6 +1,6 @@
 package com.bgrulers.web.json;
 
-import com.bgrulers.model.Ruler;
+import com.bgrulers.entity.Ruler;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
