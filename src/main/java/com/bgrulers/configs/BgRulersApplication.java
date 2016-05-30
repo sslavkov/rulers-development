@@ -5,13 +5,12 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @Configuration
 @SpringBootApplication
-@ComponentScan("com.bgrulers.web")
+@ComponentScan("com.bgrulers")
 @EnableAutoConfiguration
-@EnableJpaRepositories
+//@EnableJpaRepositories
 //@EnableCaching
 //@EnableWebSecurity
 public class BgRulersApplication {
