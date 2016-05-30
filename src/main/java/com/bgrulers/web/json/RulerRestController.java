@@ -1,9 +1,7 @@
 package com.bgrulers.web.json;
 
 import com.bgrulers.model.Ruler;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -32,5 +30,29 @@ public class RulerRestController {
 
 
         return rulers;
+    }
+
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    public Ruler retrieve(@PathVariable Long id) {
+        // retrieve one from DB
+        return new Ruler();
+    }
+
+    @RequestMapping(value = "/create", method = RequestMethod.POST)
+    public Ruler create(@RequestBody Ruler ruler) {
+        // create
+        return new Ruler();
+    }
+
+    @RequestMapping(value = "/{id}/update", method = RequestMethod.PUT)
+    public Ruler update(@PathVariable Long id, @RequestBody Ruler ruler) {
+        // update
+        return new Ruler();
+    }
+
+    @RequestMapping(value = "{id}/delete", method = RequestMethod.DELETE)
+    public Ruler delete(@PathVariable Long id) {
+        // find from repository and delete
+        return new Ruler();
     }
 }
