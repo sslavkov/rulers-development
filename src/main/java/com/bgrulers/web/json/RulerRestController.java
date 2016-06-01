@@ -5,8 +5,6 @@ import com.bgrulers.repository.RulerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
 
 /**
@@ -17,23 +15,10 @@ import java.util.Collection;
 public class RulerRestController {
 	
 	@Autowired
-	private RulerRepository rulerRepository;
+    private RulerRepository rulerRepository;
 
     @RequestMapping(method = RequestMethod.GET)
     public Collection<Ruler> list() {
-        ArrayList<Ruler> rulers = new ArrayList<Ruler>();
-
-        Ruler ruler = new Ruler();
-        ruler.setName("Asparukh");
-        ruler.setTitle("Khan");
-
-        Ruler rul = new Ruler();
-        rul.setName("Krum");
-        rul.setTitle("Khan");
-
-        rulers.addAll(Arrays.asList(ruler, rul));
-
-
         return (Collection<Ruler>) rulerRepository.findAll();
     }
 
@@ -43,6 +28,7 @@ public class RulerRestController {
         return rulerRepository.findOne(id);
     }
 
+    // TODO - replace with just POST - remove "/create" and PUT/DELETE
     @RequestMapping(value = "/create", method = RequestMethod.POST)
     public Ruler create(@RequestBody Ruler ruler) {
         // create
@@ -55,7 +41,7 @@ public class RulerRestController {
         return new Ruler();
     }
 
-    @RequestMapping(value = "{id}/delete", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/{id}/delete", method = RequestMethod.DELETE)
     public Ruler delete(@PathVariable Long id) {
         // find from repository and delete
         return new Ruler();

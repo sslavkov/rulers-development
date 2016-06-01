@@ -10,7 +10,10 @@ import javax.persistence.Entity;
 public class Ruler extends JpaEntity {
 	
 	private String name;
-	private String title;
+	private Title title;
+
+//    @OneToOne
+    private Reign reign;
 	
     public String getName() {
         return name;
@@ -20,11 +23,19 @@ public class Ruler extends JpaEntity {
         this.name = name;
     }
 	
-    public String getTitle() {
+    public Title getTitle() {
         return title;
     }
 
-    public void setTitle(String title) {
+    public void setTitle(Title title) {
         this.title = title;
+    }
+
+    public Reign getReign() {
+        return reign;
+    }
+
+    public void setReign(Reign reign) {
+        this.reign = reign;
     }
 }
