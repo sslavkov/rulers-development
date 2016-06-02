@@ -12,6 +12,8 @@ public class Dynasty extends JpaEntity {
 	private String name;
 	private String description;
 
+    //one to many with rulers
+
     public String getName() {
         return name;
     }

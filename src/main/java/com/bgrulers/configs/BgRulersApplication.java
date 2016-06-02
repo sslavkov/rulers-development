@@ -10,9 +10,7 @@ import org.springframework.context.annotation.Configuration;
 @SpringBootApplication
 @ComponentScan("com.bgrulers")
 @EnableAutoConfiguration
-//@EnableJpaRepositories
 //@EnableCaching
-//@EnableWebSecurity
 public class BgRulersApplication {
 
 	public static void main(String[] args) {
