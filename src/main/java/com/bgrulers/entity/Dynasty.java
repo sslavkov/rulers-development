@@ -1,5 +1,6 @@
 package com.bgrulers.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import java.util.Collection;
@@ -12,6 +13,7 @@ import java.util.Collection;
 public class Dynasty extends JpaEntity {
 	
 	private String name;
+    @Column(length = 15000)
 	private String description;
 
     //one to many with rulers

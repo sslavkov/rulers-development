@@ -14,6 +14,7 @@ public class Title extends JpaEntity {
     @Enumerated(EnumType.STRING)
     @Column(name = "title_type", unique = true)
 	private TitleType titleType;
+    @Column(length = 15000)
 	private String description;
 	
 

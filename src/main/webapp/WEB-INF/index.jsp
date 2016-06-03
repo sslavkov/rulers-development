@@ -8,21 +8,7 @@
 
 <h1>Hello world</h1>
 
-
-
 <script type="javascript" src="/js/lib/jquery-2.2.4.min.js"/>
-<script type="javascript">
-    $.ajax({
-        url: "/api/rulers",
-        type: "GET",
-        contentType: "application/json",
-        success: function() {
-            alert("success");
-        },
-        error: function() {
-            alert("fail")
-        }
-    });
-</script>
+<script type="javascript"></script>
 </body>
 </html>

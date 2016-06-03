@@ -1,5 +1,6 @@
 package com.bgrulers.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
@@ -20,6 +21,7 @@ public class Ruler extends JpaEntity {
     private String extraTitle;
     private Date reignStart;
     private Date reignEnd;
+    @Column(length = 15000)
     private String information;
 
     @ManyToOne
