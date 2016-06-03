@@ -2,9 +2,7 @@ package com.bgrulers.entity;
 
 import com.bgrulers.enums.TitleType;
 
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
+import javax.persistence.*;
 
 /**
  * Created by sslavkov on 5/30/2016.
@@ -14,6 +12,7 @@ import javax.persistence.Enumerated;
 public class Title extends JpaEntity {
 
     @Enumerated(EnumType.STRING)
+    @Column(name = "title_type", unique = true)
 	private TitleType titleType;
 	private String description;
 	
