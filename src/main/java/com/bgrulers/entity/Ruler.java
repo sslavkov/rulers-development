@@ -1,6 +1,8 @@
 package com.bgrulers.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import java.util.Date;
 
 /**
  * Created by sslavkov on 5/30/2016.
@@ -10,11 +12,13 @@ import javax.persistence.Entity;
 public class Ruler extends JpaEntity {
 	
 	private String name;
-	private Title title;
+    private Title title;
+    private Date reignStart;
+    private Date reignEnd;
 
-//    @OneToOne
-    private Reign reign;
-	
+    @ManyToOne
+    private Dynasty dynasty;
+
     public String getName() {
         return name;
     }
@@ -31,11 +35,27 @@ public class Ruler extends JpaEntity {
         this.title = title;
     }
 
-    public Reign getReign() {
-        return reign;
+    public Date getReignStart() {
+        return reignStart;
     }
 
-    public void setReign(Reign reign) {
-        this.reign = reign;
+    public void setReignStart(Date reignStart) {
+        this.reignStart = reignStart;
+    }
+
+    public Date getReignEnd() {
+        return reignEnd;
+    }
+
+    public void setReignEnd(Date reignEnd) {
+        this.reignEnd = reignEnd;
+    }
+
+    public Dynasty getDynasty() {
+        return dynasty;
+    }
+
+    public void setDynasty(Dynasty dynasty) {
+        this.dynasty = dynasty;
     }
 }
