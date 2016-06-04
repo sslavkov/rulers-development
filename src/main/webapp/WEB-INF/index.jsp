@@ -15,27 +15,145 @@
     <!-- 2. Load our 'modules' -->
     <script src='/js/app/app.component.js'></script>
     <script src='/js/app/main.js'></script>
-
+	
 </head>
 
 <!-- 3. Display the application -->
 <body>
-    <my-app>Loading...</my-app>
-
-    <div class="demo-card-square mdl-card mdl-shadow--2dp">
-        <div class="mdl-card__title mdl-card--expand">
-            <h2 class="mdl-card__title-text">Update</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Aenan convallis.
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                View Updates
-            </a>
-        </div>
-    </div>
+    <%--<my-app>Loading...</my-app>--%>
+	<!-- Simple header -->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<!-- Title -->
+				<span class="mdl-layout-title">Rulers of Bulgaria</span>
+			</div>
+			<!-- Tabs -->
+			<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+				<a href="#fixed-tab-1" class="mdl-layout__tab is-active">Home</a>
+				<a href="#fixed-tab-2" class="mdl-layout__tab">Rulers</a>
+				<a href="#fixed-tab-3" class="mdl-layout__tab">Tab 3</a>
+			</div>
+		</header>
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout-title">Title</span>
+		</div>
+		<main class="mdl-layout__content">
+			<section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+				<div class="page-content"><!-- Your content goes here --></div>
+			</section>
+			<section class="mdl-layout__tab-panel" id="fixed-tab-2">
+				<div class="page-content">
+					<!-- Your content goes here -->
+					<div class="demo-card-square mdl-card mdl-shadow--2dp">
+						<div class="mdl-card__title mdl-card--expand">
+							<h2 class="mdl-card__title-text">Update</h2>
+						</div>
+						<div class="mdl-card__supporting-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Aenan convallis.
+						</div>
+						<div class="mdl-card__actions mdl-card--border">
+							<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+								View Updates
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="mdl-layout__tab-panel" id="fixed-tab-3">
+				
+				<div class="page-content mdl-grid">
+					<!-- Your content goes here -->
+					<div class="mdl-cell mdl-cell--3-col">
+						<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+							<div class="mdl-card__title">
+								<h2 class="mdl-card__title-text">Welcome</h2>
+							</div>
+							<div class="mdl-card__supporting-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Mauris sagittis pellentesque lacus eleifend lacinia...
+							</div>
+							<div class="mdl-card__actions mdl-card--border">
+								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+									Get Started
+								</a>
+							</div>
+							<div class="mdl-card__menu">
+								<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+									<i class="material-icons">share</i>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="mdl-cell mdl-cell--3-col">
+						<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+							<div class="mdl-card__title">
+								<h2 class="mdl-card__title-text">Welcome</h2>
+							</div>
+							<div class="mdl-card__supporting-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Mauris sagittis pellentesque lacus eleifend lacinia...
+							</div>
+							<div class="mdl-card__actions mdl-card--border">
+								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+									Get Started
+								</a>
+							</div>
+							<div class="mdl-card__menu">
+								<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+									<i class="material-icons">share</i>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="mdl-cell mdl-cell--3-col">
+						<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+							<div class="mdl-card__title">
+								<h2 class="mdl-card__title-text">Welcome</h2>
+							</div>
+							<div class="mdl-card__supporting-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Mauris sagittis pellentesque lacus eleifend lacinia...
+							</div>
+							<div class="mdl-card__actions mdl-card--border">
+								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+									Get Started
+								</a>
+							</div>
+							<div class="mdl-card__menu">
+								<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+									<i class="material-icons">share</i>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="mdl-cell mdl-cell--3-col">
+						<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+							<div class="mdl-card__title">
+								<h2 class="mdl-card__title-text">Welcome</h2>
+							</div>
+							<div class="mdl-card__supporting-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Mauris sagittis pellentesque lacus eleifend lacinia...
+							</div>
+							<div class="mdl-card__actions mdl-card--border">
+								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+									Get Started
+								</a>
+							</div>
+							<div class="mdl-card__menu">
+								<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+									<i class="material-icons">share</i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+    
 </body>
 
 </html>
