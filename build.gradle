@@ -57,7 +57,6 @@ stage.mustRunAfter(clean)
 clean << {
     project.file('bg-rulers.jar').delete()
 }
-
 //eclipse {
 //	classpath {
 //		 containers.remove('org.eclipse.jdt.launching.JRE_CONTAINER')
