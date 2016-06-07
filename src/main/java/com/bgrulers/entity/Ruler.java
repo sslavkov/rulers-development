@@ -3,8 +3,11 @@ package com.bgrulers.entity;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
+
+import static javax.persistence.TemporalType.TIMESTAMP;
 
 /**
  * Created by sslavkov on 5/30/2016.
@@ -18,9 +21,15 @@ public class Ruler extends JpaEntity {
 
     @ManyToOne
     private Title title;
+
     private String extraTitle;
+
+    @Temporal(TIMESTAMP)
     private Date reignStart;
+
+    @Temporal(TIMESTAMP)
     private Date reignEnd;
+
     @Column(length = 15000)
     private String information;
 
