@@ -1,4 +1,8 @@
-package com.bgrulers.entity;
+package com.bgrulers.entity.ruler;
+
+import com.bgrulers.entity.Dynasty;
+import com.bgrulers.entity.JpaEntity;
+import com.bgrulers.entity.Title;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

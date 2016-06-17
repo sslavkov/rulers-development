@@ -1,6 +1,6 @@
 package com.bgrulers.repository;
 
-import com.bgrulers.entity.Ruler;
+import com.bgrulers.entity.ruler.Ruler;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;

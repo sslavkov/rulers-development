@@ -1,6 +1,6 @@
-package com.bgrulers.entity.projection;
+package com.bgrulers.entity.ruler.projection;
 
-import com.bgrulers.entity.Ruler;
+import com.bgrulers.entity.ruler.Ruler;
 import com.bgrulers.entity.Title;
 import org.springframework.data.rest.core.config.Projection;
 

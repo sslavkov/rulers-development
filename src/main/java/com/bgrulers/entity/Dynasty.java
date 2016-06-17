@@ -1,5 +1,7 @@
 package com.bgrulers.entity;
 
+import com.bgrulers.entity.ruler.Ruler;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
