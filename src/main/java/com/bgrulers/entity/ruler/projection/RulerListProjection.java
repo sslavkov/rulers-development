@@ -6,7 +6,7 @@ import org.springframework.data.rest.core.config.Projection;
 
 import java.util.Date;
 
-@Projection(name = "list", types = Ruler.class)
+@Projection(name = "rulerList", types = Ruler.class)
 public interface RulerListProjection {
 
     Long getId();

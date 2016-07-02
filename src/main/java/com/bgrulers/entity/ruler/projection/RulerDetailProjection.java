@@ -8,7 +8,7 @@ import org.springframework.data.rest.core.config.Projection;
 import java.util.Date;
 
 // TODO - change name to 'rulerDetail'
-@Projection(name = "detail", types = Ruler.class)
+@Projection(name = "rulerDetail", types = Ruler.class)
 public interface RulerDetailProjection {
 
     Long getId();
