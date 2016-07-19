@@ -11,6 +11,7 @@ public interface RulerListProjection {
 
     Long getId();
     String getName();
+    String getInformation();
     Title getTitle();
     Date getReignStart();
     Date getReignEnd();
